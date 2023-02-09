@@ -103,6 +103,11 @@ class BurnedNftsEvents(EventsStream):
     return f"api/company/{self.company_id}/search"
 
 
+class BurnedPacksEvents(EventsStream):
+  def path(self, **_) -> str:
+    return f"api/company/{self.company_id}/search"
+
+
 class ChallengeBurnedNftsEvents(EventsStream):
   def path(self, **_) -> str:
     return f"api/company/{self.company_id}/search"
